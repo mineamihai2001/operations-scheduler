@@ -1,6 +1,6 @@
 from .Procedure import Procedure, ProcedureType
 
 
-class Anaesthesia(Procedure):
+class Surgery(Procedure):
     def __init__(self, procedure_length: float) -> None:
-        super().__init__(ProcedureType.ANAESTHESIA, procedure_length)
+        super().__init__(ProcedureType.SURGICAL, procedure_length)

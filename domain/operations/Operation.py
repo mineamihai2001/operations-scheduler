@@ -1,14 +1,14 @@
 from .procedures.Anaesthesia import Anaesthesia
-from .procedures.Surgical import Surgical
+from .procedures.Surgery import Surgery
 
 
 class Operation:
     start: float | None
     finish: float | None
     anaesthesia: Anaesthesia
-    surgical: Surgical
+    surgical: Surgery
 
-    def __init__(self, anaesthesia: Anaesthesia, surgical: Surgical) -> None:
+    def __init__(self, anaesthesia: Anaesthesia, surgical: Surgery) -> None:
         self.start = None
         self.finish = None
         self.anaesthesia = anaesthesia
